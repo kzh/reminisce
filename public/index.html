@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+        <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js"></script>
+        <script src="/assets/js/main.js"></script>
+    </head>
+    <body>
+        <div class="ui top attached menu">
+            <a class="logo item">Reminisce</a> 
+            <div class="ui dropdown icon item">
+                <i class="control play icon"></i>
+            </div>
+            <div class="ui dropdown icon item">
+                <i class="step forward icon"></i>
+            </div>
+        </div>
+    </body>
+    <div class="ui two column very relaxed grid">
+        <div class="left column">
+            <div id="editor">section .text
+
+start:
+    mov rcx, 0x0
+    
+.loop:
+    call add
+    
+    cmp rcx, 0x5
+    jne .loop
+    
+    mov rax, 0x2000001
+    syscall
+    
+add:
+    add rcx, 0x1
+    ret     </div>
+
+            <div class="ui two column very relaxed grid">
+                <div class="registers column">
+                    <table class="registers ui celled striped table">
+                        <thead>
+                            <tr><th colspan="2">
+                                Registers
+                            </th></tr>
+                        </thead>
+                        <tbody class="registers">
+                            <tr>
+                                <td> rax </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> rbx </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> rcx </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> rdx </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> rsi </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> rdi </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> rbp </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> rsp </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> r8 </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> r9 </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> r10 </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> r11 </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                             <tr>
+                                <td> r12 </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                             <tr>
+                                <td> r13 </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                             <tr>
+                                <td> r14 </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                            <tr>
+                                <td> r15 </td>
+                                <td> 0x00000000 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="mem column">
+            <table class="mem ui selectable celled table">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</html>
